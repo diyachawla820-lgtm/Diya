@@ -1,3 +1,5 @@
+import { getAssetPath } from '@/utils/assets'
+
 export default function IPhoneMockup() {
   return (
     <div className="relative mx-auto w-[220px] sm:w-[260px] md:w-[280px]">
@@ -9,7 +11,7 @@ export default function IPhoneMockup() {
         {/* Screen content */}
         <div className="h-[400px] sm:h-[470px] md:h-[520px] overflow-hidden bg-charcoal">
           <video
-            src="/video/Reel.mp4"
+            src={getAssetPath('/video/Reel.mp4')}
             muted
             autoPlay
             loop

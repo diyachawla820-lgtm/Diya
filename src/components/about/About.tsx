@@ -1,6 +1,7 @@
 import FadeInOnScroll from '@/components/shared/FadeInOnScroll'
 import PlaceholderImage from '@/components/shared/PlaceholderImage'
 import { siteContent } from '@/data/siteContent'
+import { getAssetPath } from '@/utils/assets'
 
 export default function About() {
   const { about } = siteContent
@@ -19,7 +20,7 @@ export default function About() {
           <FadeInOnScroll>
             <PlaceholderImage
               label="Professional Headshot"
-              src="/images/Headshot.jpg"
+              src={getAssetPath('/images/Headshot.jpg')}
               icon="👤"
               className="w-full max-w-lg mx-auto rounded-lg object-cover object-top h-[35rem] md:h-[36rem] lg:h-[40rem]"
             />

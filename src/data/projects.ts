@@ -1,3 +1,5 @@
+import { getAssetPath } from '@/utils/assets'
+
 export interface PlanVsRealityItem {
   label: string
   planImage: string | null
@@ -24,16 +26,16 @@ export const weddingStats: StatItem[] = [
 export const planVsReality: PlanVsRealityItem[] = [
   {
     label: 'Ceremony Setup',
-    planImage: '/images/EventLayout.png',
-    realityImage: '/images/EventLayoutReal.jpg',
+    planImage: getAssetPath('/images/EventLayout.png'),
+    realityImage: getAssetPath('/images/EventLayoutReal.jpg'),
     planCaption: 'AutoCAD floor plan with precise seating grid',
     realityCaption: 'Seating arranged for 500 under open-air mandap',
     realityPosition: '50% 88%',
   },
   {
     label: 'Reception Layout',
-    planImage: '/images/3DSketchup.png',
-    realityImage: '/images/ReceptionImage.jpg',
+    planImage: getAssetPath('/images/3DSketchup.png'),
+    realityImage: getAssetPath('/images/ReceptionImage.jpg'),
     planCaption: 'SketchUp 3D render of table arrangements',
     realityCaption: 'Actual setup of table arrangements',
     planPosition: '0% 50%',
@@ -41,8 +43,8 @@ export const planVsReality: PlanVsRealityItem[] = [
   },
   {
     label: 'Décor Installation',
-    planImage: '/images/DecorInstallationMoodBoard.png',
-    realityImage: '/images/DecorInstallation.jpg',
+    planImage: getAssetPath('/images/DecorInstallationMoodBoard.png'),
+    realityImage: getAssetPath('/images/DecorInstallation.jpg'),
     planCaption: 'Mood board with floral palette and textures',
     realityCaption: 'Floral canopy spanning 40-foot ceiling',
     realityPosition: '50% 30%',
@@ -50,9 +52,9 @@ export const planVsReality: PlanVsRealityItem[] = [
 ]
 
 export const moodBoards = [
-  { id: 1, title: 'Ethereal Garden', image: '/images/moodboard-1.png' },
-  { id: 2, title: 'Urban Luxe', image: '/images/moodboard-2.png' },
-  { id: 3, title: 'Coastal Minimal', image: '/images/moodboard-3.png' },
-  { id: 4, title: 'Heritage Opulence', image: '/images/moodboard-4.png' },
-  { id: 5, title: 'Modern Romantic', image: '/images/moodboard-5.png' },
+  { id: 1, title: 'Ethereal Garden', image: getAssetPath('/images/moodboard-1.png') },
+  { id: 2, title: 'Urban Luxe', image: getAssetPath('/images/moodboard-2.png') },
+  { id: 3, title: 'Coastal Minimal', image: getAssetPath('/images/moodboard-3.png') },
+  { id: 4, title: 'Heritage Opulence', image: getAssetPath('/images/moodboard-4.png') },
+  { id: 5, title: 'Modern Romantic', image: getAssetPath('/images/moodboard-5.png') },
 ]

@@ -1,17 +1,18 @@
 import FadeInOnScroll from '@/components/shared/FadeInOnScroll'
 import ScrollTrack from '@/components/shared/ScrollTrack'
+import { getAssetPath } from '@/utils/assets'
 
 const eventImages = [
-  { src: '/images/Spatial1.png', alt: 'Event Interior 1', className: 'object-top' },
-  { src: '/images/EventSpatial2.png', alt: 'Event Interior 2', className: '' },
-  { src: '/images/EventSpatial3.png', alt: 'Event Interior 3', className: '' },
+  { src: getAssetPath('/images/Spatial1.png'), alt: 'Event Interior 1', className: 'object-top' },
+  { src: getAssetPath('/images/EventSpatial2.png'), alt: 'Event Interior 2', className: '' },
+  { src: getAssetPath('/images/EventSpatial3.png'), alt: 'Event Interior 3', className: '' },
 ]
 
 const homeImages = [
-  { src: '/images/Spatial2.jpg', alt: 'Home Interior 1', className: '' },
-  { src: '/images/Spatial3.jpg', alt: 'Home Interior 2', className: '' },
-  { src: '/images/Spatial4.jpg', alt: 'Home Interior 3', className: '' },
-  { src: '/images/Spatial5.jpg', alt: 'Home Interior 4', className: '' },
+  { src: getAssetPath('/images/Spatial2.jpg'), alt: 'Home Interior 1', className: '' },
+  { src: getAssetPath('/images/Spatial3.jpg'), alt: 'Home Interior 2', className: '' },
+  { src: getAssetPath('/images/Spatial4.jpg'), alt: 'Home Interior 3', className: '' },
+  { src: getAssetPath('/images/Spatial5.jpg'), alt: 'Home Interior 4', className: '' },
 ]
 
 export default function SpatialStorytelling() {
