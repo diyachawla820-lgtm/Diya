@@ -1,6 +1,5 @@
 import FadeInOnScroll from '@/components/shared/FadeInOnScroll'
 import ScrollTrack from '@/components/shared/ScrollTrack'
-import { useLightbox } from '@/components/shared/LightboxContext'
 
 const eventImages = [
   { src: '/images/Spatial1.png', alt: 'Event Interior 1', className: 'object-top' },
@@ -16,8 +15,6 @@ const homeImages = [
 ]
 
 export default function SpatialStorytelling() {
-  const { open } = useLightbox()
-
   return (
     <div className="bg-spatial text-cream py-20 md:py-28">
       {/* Header */}

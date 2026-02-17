@@ -1,11 +1,9 @@
 import FadeInOnScroll from '@/components/shared/FadeInOnScroll'
 import PlaceholderImage from '@/components/shared/PlaceholderImage'
-import { useLightbox } from '@/components/shared/LightboxContext'
 import { siteContent } from '@/data/siteContent'
 
 export default function About() {
   const { about } = siteContent
-  const { open } = useLightbox()
 
   return (
     <section className="py-24 md:py-32 bg-about">

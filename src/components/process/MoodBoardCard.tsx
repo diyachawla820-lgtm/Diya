@@ -1,5 +1,4 @@
 import PlaceholderImage from '@/components/shared/PlaceholderImage'
-import { useLightbox } from '@/components/shared/LightboxContext'
 
 interface MoodBoardCardProps {
   title: string
@@ -7,7 +6,6 @@ interface MoodBoardCardProps {
 }
 
 export default function MoodBoardCard({ title, image }: MoodBoardCardProps) {
-  const { open } = useLightbox()
 
   return (
     <div className="group shrink-0 w-64 sm:w-80 md:w-96">

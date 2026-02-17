@@ -1,10 +1,8 @@
 import PlaceholderImage from '@/components/shared/PlaceholderImage'
 import FadeInOnScroll from '@/components/shared/FadeInOnScroll'
-import { useLightbox } from '@/components/shared/LightboxContext'
 import type { PlanVsRealityItem } from '@/data/projects'
 
 export default function PlanVsReality({ items }: { items: PlanVsRealityItem[] }) {
-  const { open } = useLightbox()
 
   return (
     <div className="space-y-16">
