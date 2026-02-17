@@ -1,11 +1,13 @@
+// Base URL is set in vite.config.ts
+const BASE_URL = '/Diya/'
+
 /**
  * Get the correct asset path for production deployment
- * Handles base URL for GitHub Pages or other deployments
+ * Handles base URL for GitHub Pages deployment
  */
 export function getAssetPath(path: string): string {
-  const base = import.meta.env.BASE_URL
-  // Remove leading slash from path if present
+  // Remove leading slash if present
   const cleanPath = path.startsWith('/') ? path.slice(1) : path
-  // Combine base and path, ensuring no double slashes
-  return `${base}${cleanPath}`.replace(/\/+/g, '/')
+  // Return full path with base
+  return BASE_URL + cleanPath
 }
