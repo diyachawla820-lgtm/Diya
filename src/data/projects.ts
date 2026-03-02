@@ -54,6 +54,7 @@ export const planVsReality: PlanVsRealityItem[] = [
 export const moodBoards = [
   { id: 1, title: 'Ethereal Garden', image: getAssetPath('/images/moodboard-1.png') },
   { id: 2, title: 'Urban Luxe', image: getAssetPath('/images/moodboard-2.png') },
-  { id: 3, title: 'Heritage Opulence', image: getAssetPath('/images/moodboard-4.png') },
-  { id: 4, title: 'Modern Romantic', image: getAssetPath('/images/moodboard-5.png') },
+  { id: 3, title: 'Coastal Minimal', image: getAssetPath('/images/moodboard-3.png') },
+  { id: 4, title: 'Heritage Opulence', image: getAssetPath('/images/moodboard-4.png') },
+  { id: 5, title: 'Modern Romantic', image: getAssetPath('/images/moodboard-5.png') },
 ]
