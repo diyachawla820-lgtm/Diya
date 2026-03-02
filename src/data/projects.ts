@@ -46,7 +46,7 @@ export const planVsReality: PlanVsRealityItem[] = [
     planImage: getAssetPath('/images/DecorInstallationMoodBoard.png'),
     realityImage: getAssetPath('/images/DecorInstallation.jpg'),
     planCaption: 'Mood board with floral palette and textures',
-    realityCaption: 'Floral canopy spanning 40-foot ceiling',
+    realityCaption: 'Hanging fabric banners and scroll drapes suspended between trees',
     realityPosition: '50% 30%',
   },
 ]
